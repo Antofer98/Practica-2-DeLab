@@ -23,7 +23,7 @@ def get_Organizations():
 response_json = get_Organizations()
 
 
-def Name_Organizations(): #Busca el nombre de DeLab asociado a la organizacion y devuelve el ID en un string
+def Name_Organizations(): #Busca el nombre de DeLab asociado a la organizacion y devuelve el ID
     DeLab=[]
     for i in range(len(response_json)):
         if(response_json[i]['name']=="DeLab"):    	    
