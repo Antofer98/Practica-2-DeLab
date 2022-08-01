@@ -2,7 +2,7 @@ import requests
 import json
 from pprint import pp
 import csv
-from time import time, ctime, sleep
+from time import sleep
 
 
 ## Definimos la cabecera para la API de Meraki##
@@ -54,3 +54,7 @@ with open('inventario.csv', 'w', newline='') as file:
      writer = csv.writer(file, delimiter=';')
      writer.writerow(json_1)
      print('Se creo el archivo .csv de diccionario que contiene las especificaciones de los dispositivos')
+
+def contador():
+    segundos=300
+    sleep(segundos)
