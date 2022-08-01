@@ -1,0 +1,9 @@
+services:
+  contenedor:
+    image: practica3docker-py
+    volumes: 
+      - "volumen1:/usr/src/app practica3docker-py"
+version: '3'
+volumes:
+  volumen1:
+    external: true
